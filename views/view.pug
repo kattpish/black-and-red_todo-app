@@ -1,0 +1,21 @@
+html
+  head
+    title My Todo list
+    style
+      include ../css/style.css
+body
+    div.title
+        a #
+        a= username
+        a 'S TODOLIST#
+    p.subtitle Wat? U hav to do-!
+    div.todolist
+        ul
+            each todo in todos
+                li= todo
+    div
+        form(action="/add_todo")
+            input.button(type="submit" value="CLIC BUT DANZIER")
+        br
+        form(action="/")
+            input.logout(type="submit" value="LOG OUT")

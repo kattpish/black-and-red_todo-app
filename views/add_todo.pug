@@ -1,0 +1,14 @@
+html
+    head
+        style
+            include ../css/style.css
+        title Add TODO
+    body
+        div
+            form(action="/add", method="POST")
+                div.title
+                    label(for="todo_text") WRITE
+                    p V 
+                    div.addtodo
+                        input.blank(name="todo_text" autocomplete="off")
+                        input.clic(type="submit" value="clik")

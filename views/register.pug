@@ -1,0 +1,17 @@
+html
+    head
+        style
+            include ../css/style_index.css
+        title REZISTAR
+    body
+        div
+            form(action="/regi_done", method="POST")
+                div.title
+                    p REZISTAR
+                    div.addtodo
+                        input.blank3(name="username" autocomplete="off" placeholder="Userneim")
+                        br
+                        input.blank3(name="password" autocomplete="off" placeholder="Pathworld")
+                        br
+                        input.blank3(name="passwordconf" autocomplete="off" placeholder="Pathworld Conf")
+                        input.clic(type="submit" value="clik")

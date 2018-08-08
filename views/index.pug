@@ -1,0 +1,18 @@
+html
+    head
+        style
+            include ../css/style_index.css
+        title TODO-LIST
+    body
+        div
+            form(action="/login", method="POST")
+                div.title
+                    div
+                        p Log.in
+                    div.addtodo
+                        input.blank2(name="todo_id" autocomplete="off")
+                        br
+                        input.blank2(name="todo_pw" autocomplete="off")
+                        input.clic(type="submit" value="clik")
+            form(action="/register" method="POST")
+                input.register(type="submit" value="REZISTAR")
